@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexTag Compare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/compare.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <div class="container nav-shell">
+      <a class="navbar-brand" href="#" aria-label="NexTag home">
+        <img src="./img/ng-monogram.svg" alt="NG monogram" class="navbar-logo">
+        <span class="brand-wordmark">NEXTAG</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-lg-center ms-lg-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="./women's.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu luxury-dropdown">
+              <li>
+                <a class="dropdown-item" href="./wallets.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-wallet"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Wallets</span>
+                    <span class="dropdown-copy">Slim leather essentials</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./women's.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                  <span>
+                    <span class="dropdown-title">Women's Bags</span>
+                    <span class="dropdown-copy">Elegant carry pieces</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./jacket.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-user-tie"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Jackets</span>
+                    <span class="dropdown-copy">Premium leather outerwear</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./compare.html">Compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <a class="navbar-cta" href="#">Shop Now</a> -->
+      </div>
+    </div>
+  </nav>
+  <section class="sec-1 compare-hero">
+    <div class="container hero-container">
+      <div class="row hero-row">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <p class="side-para">Compare. Choose. Invest.</p>
+            <h1 class="hero-title">Compare with<br><span class="span-text">Confidence.</span></h1>
+            <div class="hero-divider" aria-hidden="true">
+              <span></span>
+              <i class="fa-solid fa-diamond"></i>
+              <span></span>
+              <i class="fa-solid fa-diamond"></i>
+              <span></span>
+            </div>
+            <p class="para-2"><b>Evaluate features, materials, and craftsmanship side by side to find the piece that's
+                perfectly yours.</b></p>
+            <div class="hero-features" aria-label="Comparison benefits">
+              <span><i class="fa-solid fa-shield-halved"></i> Premium Materials</span>
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> Expert Craftsmanship</span>
+              <span><i class="fa-regular fa-gem"></i> Timeless Value</span>
+            </div>
+            <div class="button-wrapper d-flex flex-column flex-sm-row align-items-start gap-2 gap-sm-3">
+              <button class="btn-1">
+                <a href="#fav-brand">Start Comparing</a>
+              </button>
+              <!-- <button class="btn-2">Browse Collection</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <img src="./img/compare.png" alt="Leather jacket, handbags, and wallet displayed for comparison"
+              class="img-fluid img-1">
+            <div class="compare-steps" aria-label="How comparison works">
+              <span>Add items to compare</span>
+              <span class="step-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+              <span>See the differences <i class="fa-regular fa-eye"></i></span>
+              <span>Choose your perfect match <i class="fa-solid fa-check"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="compare-section" id="fav-brand">
+
+    <div class="container">
+
+      <div class="main-title">
+        <h1 id="compareTitle">Compare Luxury Bags</h1>
+        <p id="compareSubtitle">Choose two bags and compare them easily</p>
+      </div>
+
+      <div class="compare-box">
+        <div class="category-tabs" role="tablist" aria-label="Choose product category to compare">
+          <button type="button" class="category-tab active" data-category="bags" role="tab" aria-selected="true">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Women's Bags
+          </button>
+          <button type="button" class="category-tab" data-category="wallets" role="tab" aria-selected="false">
+            <i class="fa-solid fa-wallet"></i>
+            Wallets
+          </button>
+          <button type="button" class="category-tab" data-category="jackets" role="tab" aria-selected="false">
+            <i class="fa-solid fa-user-tie"></i>
+            Jackets
+          </button>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <select id="select1" class="form-select" onchange="compareProducts()">
+              <option value="" disabled selected hidden>Select Your First Bag</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <select id="select2" class="form-select" onchange="compareProducts()">
+              <option value="" disabled selected hidden>Select Your Second Bag</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div id="result"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+   <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NexTag</h2>
+        </div>
+        <div class="footer-column">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./women's.html">Products</a></li>
+            <li><a href="./compare.html">Compare</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Collections -->
+        <div class="footer-column">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="./women's.html">Women's Bag</a></li>
+            <li><a href="./wallets.html">Men's Wallet</a></li>
+            <li><a href="./jacket.html">Jackets</a></li>
+            
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+
+          </ul>
+        </div>
+
+        <!-- About
+      <div class="footer-column">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#">Production</a></li>
+        </ul>
+      </div> -->
+
+        <!-- Support -->
+        <!-- <div class="footer-column">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Care Guide</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div> -->
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <div class="newsletter-input">
+            <input type="email" placeholder="Enter your email">
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="shop-luxury-section">
+        <i class="fas fa-store" style="font-size: 2.2rem; color: #d5aa71;"></i>
+        <h3 style="margin: 16px 0 8px; font-family: 'Cormorant Garamond', serif;">NEXTAG ATELIER</h3>
+        <p><i class="fas fa-map-pin"></i> Karachi — Pakistan | Walk-in by appointment</p>
+        <p>+92 11 111 111 | nextag.com</p>
+        <p style="margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Premium leather goods
+          crafted with timeless elegance, modern luxury, and exceptional quality.</p>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; NexTag. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+
+    const bags = [
+
+      {
+        name: "Rouge Élégance",
+        brand: "channel",
+        price: "PKR 35,000",
+        color: "Mahroon",
+        leather: "Lambskin Leather",
+        image: "./img/channel2.jpg"
+         
+      },
+
+      {
+        name: "Emerald Imperial",
+        brand: "Saint-lauren",
+        price: "PKR 30,000",
+        color: "Emerald green",
+        leather: "Quilted Leather",
+        image: "./img/ysl-2.jpg"
+      },
+
+      {
+        name: "Imperial Black",
+        brand: "Prada",
+        price: "PKR 48,500",
+        color: "Black",
+        leather: "Saffiano Leather",
+        image: "./img/prada.jpg"
+      },
+      {
+        name: "Ivory Grace",
+        brand: "Louis Vuitton",
+        price: "PKR 48,000",
+        color: "Brown",
+        leather: "Empreinte Leather",
+
+        image: "./img/lv.jpg"
+      },
+
+      {
+        name: "Vintage Horsebit",
+        brand: "Gucci",
+        price: "PKR 25,200",
+        color: "White",
+        leather: "Pebbled Leather",
+        image: "./img/gucci2.jpg"
+      },
+
+      {
+        name: "Onyx Muse",
+        brand: "Saint-lauren",
+        price: "PKR 63,500",
+        color: "Yellow",
+        leather: "Grain de Poudre Leather",
+        image: "./img/ysl-3.jpg"
+      },
+      {
+        name: "Sienna Crest",
+        brand: "Gucci",
+        price: "PKR 58,900",
+        color: "Brown",
+        leather: "Matelassé Leather",
+        image: "./img/gucci 3.jpg"
+      },
+      {
+        name: "Pearl Quilted",
+        brand: "Chanel",
+        price: "PKR 72,400",
+        color: "Baby Pink",
+        leather: "Patent Leather",
+        image: "./img/channel-3.jpg"
+      },
+
+      {
+        name: "Aurora Trunk",
+        brand: "Louis Vuitton",
+        price: "PKR 69,800",
+        leather: "Epi Leather",
+        color: "Purple",
+        image: "./img/lv-3.jpg"
+      },
+
+      {
+        name: "Saffiano Verde",
+        brand: "Prada",
+        price: "PKR  54,600",
+        color: "Brown",
+        leather: "Saffiano Leather",
+        image: "./img/prada-3.jpg"
+      },
+
+
+    ];
+
+
+    $(document).ready(function () {
+
+      $("#select1").append(`
+        <option value="0"> Channel Rouge Élégance</option>
+        <option value="1">Ysl Emerald Imperial</option>
+        <option value="2">Prada Imperial Black</option>
+             <option value="3">LV Ivory Grace</option>
+             <option value="4">Gucci Vintage Horsebit</option>
+                 <option value="5">Saint Laurent Onyx Muse</option>
+                  <option value="6">Gucci Sienna Crest</option>
+                         <option value="7">Chanel Pearl Quilted</option>
+                              <option value="8">Louis Vuitton Aurora Trunk</option>
+                                   <option value="9">Prada Saffiano Verde</option>
+      `);
+
+
+      $("#select2").append(`
+       <option value="0"> Channel Rouge Élégance</option>
+        <option value="1">Ysl Emerald Imperial</option>
+        <option value="2">Prada Imperial Black</option>
+             <option value="3">LV Ivory Grace</option>
+             <option value="4">Gucci Vintage Horsebit</option>
+                 <option value="5">Saint Laurent Onyx Muse</option>
+                  <option value="6">Gucci Sienna Crest</option>
+                         <option value="7">Chanel Pearl Quilted</option>
+                              <option value="8">Louis Vuitton Aurora Trunk</option>
+                                <option value="9">Prada Saffiano Verde</option>
+      `);
+
+    });
+
+
+    function compareBags() {
+
+      let first = $("#select1").val();
+
+      let second = $("#select2").val();
+
+
+      if (first === "" || second === "") {
+        return;
+      }
+
+
+      let bag1 = bags[first];
+
+      let bag2 = bags[second];
+
+
+      $("#result").html(`
+
+        <table class="compare-table table">
+
+          <tr>
+            <th>Feature</th>
+            <th>${bag1.name}</th>
+            <th>${bag2.name}</th>
+          </tr>
+
+          <tr>
+            <td>Image</td>
+
+            <td>
+              <img src="${bag1.image}" class="bag-image">
+            </td>
+
+            <td>
+              <img src="${bag2.image}" class="bag-image">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Brand</td>
+            <td class="brand-name">${bag1.brand}</td>
+            <td class="brand-name">${bag2.brand}</td>
+          </tr>
+
+          <tr>
+            <td>Price</td>
+            <td>${bag1.price}</td>
+            <td>${bag2.price}</td>
+          </tr>
+
+          <tr>
+            <td>Color</td>
+            <td>${bag1.color}</td>
+            <td>${bag2.color}</td>
+          </tr>
+
+
+            <tr>
+            <td>leather</td>
+            <td>${bag1.leather}</td>
+            <td>${bag2.leather}</td>
+          </tr>
+
+        </table>
+
+      `);
+
+    }
+
+    const compareCatalog = {
+      bags: {
+        label: "Women's Bags",
+        singular: "Bag",
+        title: "Compare Luxury Bags",
+        subtitle: "Choose two bags and compare them easily",
+        products: [
+          { name: "Rouge Elegance", brand: "Chanel", price: "PKR 35,000", color: "Mahroon", leather: "Lambskin Leather", image: "./img/channel2.jpg" },
+          { name: "Emerald Imperial", brand: "Saint Laurent", price: "PKR 30,000", color: "Emerald Green", leather: "Quilted Leather", image: "./img/ysl-2.jpg" },
+          { name: "Imperial Black", brand: "Prada", price: "PKR 48,500", color: "Black", leather: "Saffiano Leather", image: "./img/prada.jpg" },
+          { name: "Ivory Grace", brand: "Louis Vuitton", price: "PKR 48,000", color: "Brown", leather: "Empreinte Leather", image: "./img/lv.jpg" },
+          { name: "Vintage Horsebit", brand: "Gucci", price: "PKR 25,200", color: "White", leather: "Pebbled Leather", image: "./img/gucci2.jpg" },
+          { name: "Onyx Muse", brand: "Saint Laurent", price: "PKR 63,500", color: "Yellow", leather: "Grain de Poudre Leather", image: "./img/ysl-3.jpg" },
+          { name: "Sienna Crest", brand: "Gucci", price: "PKR 58,900", color: "Brown", leather: "Matelasse Leather", image: "./img/gucci 3.jpg" },
+          { name: "Pearl Quilted", brand: "Chanel", price: "PKR 72,400", color: "Baby Pink", leather: "Patent Leather", image: "./img/channel-3.jpg" },
+          { name: "Aurora Trunk", brand: "Louis Vuitton", price: "PKR 69,800", color: "Purple", leather: "Epi Leather", image: "./img/lv-3.jpg" },
+          { name: "Saffiano Verde", brand: "Prada", price: "PKR 54,600", color: "Brown", leather: "Saffiano Leather", image: "./img/prada-3.jpg" }
+        ]
+      },
+      wallets: {
+        label: "Wallets",
+        singular: "Wallet",
+        title: "Compare Luxury Wallets",
+        subtitle: "Choose two wallets and compare them easily",
+        products: [
+          { name: "LV Eclipse", brand: "Louis Vuitton", price: "PKR 600", color: "Black", leather: "Full-Grain Leather", image: "https://hub.com.pk/cdn/shop/products/MW0906-132_1_a41573fc-b906-4938-bfb6-3ebe03ec2e19_600x.png?v=1757147973" },
+          { name: "Noir Elegance", brand: "Chanel", price: "PKR 780", color: "Black", leather: "Quilted Leather", image: "https://hub.com.pk/cdn/shop/files/MW163A-011_6_600x.jpg?v=1757147423" },
+          { name: "Velvet Charm", brand: "Gucci", price: "PKR 490", color: "Sienna", leather: "Italian Leather", image: "https://hub.com.pk/cdn/shop/files/MW0906-136-SEINNA_11_600x.jpg?v=1757147975" },
+          { name: "Amber Royale", brand: "Hermes", price: "PKR 560", color: "Amber", leather: "Vegetable-Tanned Leather", image: "https://hub.com.pk/cdn/shop/files/MW0652-096_2_600x.jpg?v=1757147985" },
+          { name: "Prada Veloura", brand: "Prada", price: "PKR 440", color: "Dark Tan", leather: "Saffiano Leather", image: "https://hub.com.pk/cdn/shop/files/MW0059-001-DARKTAN_11_600x.jpg?v=1757148024" },
+          { name: "Midnight Elite", brand: "Saint Laurent", price: "PKR 500", color: "Black", leather: "Smooth Leather", image: "https://hub.com.pk/cdn/shop/files/MW1058-013_2_600x.jpg?v=1757147966" },
+          { name: "Azure Royale", brand: "Hermes", price: "PKR 999", color: "Azure", leather: "Pebbled Leather", image: "https://hub.com.pk/cdn/shop/files/MW0047-018_3_600x.jpg?v=1757148044" },
+          { name: "Rouge Elegance", brand: "Chanel", price: "PKR 3000", color: "Black", leather: "Full-Grain Leather", image: "https://hub.com.pk/cdn/shop/files/MW0018_600x.jpg?v=1757148055" },
+          { name: "Emerald Imperial", brand: "Saint Laurent", price: "PKR 1000", color: "Black", leather: "Grained Leather", image: "https://hub.com.pk/cdn/shop/files/MW0077-002_4_6d7bd699-4b96-4a23-a3ff-458d1c16f7c1_600x.jpg?v=1757147449" },
+          { name: "Imperial Black", brand: "Prada", price: "PKR 500", color: "Charcoal", leather: "Saffiano Leather", image: "https://hub.com.pk/cdn/shop/files/MW0861-043_7_600x.jpg?v=1757147425" },
+          { name: "Ivory Grace", brand: "Louis Vuitton", price: "PKR 500", color: "Ivory", leather: "Monogram Leather", image: "https://hub.com.pk/cdn/shop/files/MW1132-009_2_600x.jpg?v=1757147953" },
+          { name: "Vintage Horsebit", brand: "Gucci", price: "PKR 2200", color: "Brown", leather: "Classic Leather", image: "https://hub.com.pk/cdn/shop/products/MW0813-002_1_600x.jpg?v=1757147645" },
+          { name: "Onyx Muse", brand: "Saint Laurent", price: "PKR 500", color: "Honey", leather: "Smooth Leather", image: "https://hub.com.pk/cdn/shop/files/MW075RF-001-HONEY_4eff8ff0-3964-439b-9762-32d9524d9bd4_600x.jpg?v=1757147429" },
+          { name: "Sienna Crest", brand: "Gucci", price: "PKR 900", color: "Blue", leather: "Polished Leather", image: "https://hub.com.pk/cdn/shop/files/MW076RF-003-BLUE_600x.jpg?v=1757147414" },
+          { name: "Pearl Quilted", brand: "Chanel", price: "PKR 2400", color: "Ivory", leather: "Quilted Leather", image: "https://hub.com.pk/cdn/shop/files/MW0123-011_4_600x.jpg?v=1757147447" },
+          { name: "Aurora Trunk", brand: "Louis Vuitton", price: "PKR 800", color: "Brown", leather: "Canvas Leather", image: "https://hub.com.pk/cdn/shop/files/DSC03767_600x.jpg?v=1758192069" },
+          { name: "Saffiano Verde", brand: "Prada", price: "PKR 4600", color: "Green", leather: "Saffiano Leather", image: "https://hub.com.pk/cdn/shop/products/MW024H-002_5_600x.jpg?v=1757147540" },
+          { name: "Citrine Lock", brand: "Hermes", price: "PKR 1200", color: "Citrine", leather: "Pebbled Leather", image: "https://hub.com.pk/cdn/shop/products/MW0123-030_4_600x.jpg?v=1757147545" }
+        ]
+      },
+      jackets: {
+        label: "Jackets",
+        singular: "Jacket",
+        title: "Compare Luxury Jackets",
+        subtitle: "Choose two jackets and compare them easily",
+        products: [
+          { name: "LV Eclipse", brand: "Louis Vuitton", price: "PKR 600", color: "Black", leather: "Premium Leather", image: "https://m.media-amazon.com/images/I/61s48UJ01bL._AC_SX569_.jpg" },
+          { name: "Noir Elegance", brand: "Chanel", price: "PKR 780", color: "Black", leather: "Quilted Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFqlnnNa8ejar59XbCKeUVsHq9-rsXsWOfA&s" },
+          { name: "Velvet Charm", brand: "Gucci", price: "PKR 490", color: "Green", leather: "Italian Leather", image: "https://www.thejacketmaker.pk/cdn/shop/files/Men_s_Mystical_Green_Leather_Jacket_Open_Front-4-1724140205980.webp?v=1760637397" },
+          { name: "Amber Royale", brand: "Hermes", price: "PKR 560", color: "Black", leather: "Full-Grain Leather", image: "https://hrclothing.com.pk/cdn/shop/files/28.jpg?v=1735751200&width=360" },
+          { name: "Prada Veloura", brand: "Prada", price: "PKR 440", color: "Tan", leather: "Premium Leather", image: "https://hub.com.pk/cdn/shop/products/Category4_37a29e65-5421-414a-b368-d1febfad2bac_600x.jpg?v=1757147642" },
+          { name: "Midnight Elite", brand: "Saint Laurent", price: "PKR 500", color: "Black", leather: "Smooth Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5T9FJ33eIP640ZBQSRVQG8ypTmgagnyWpA&s" },
+          { name: "Azure Royale", brand: "Hermes", price: "PKR 999", color: "Black", leather: "Biker Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5T9FJ33eIP640ZBQSRVQG8ypTmgagnyWpA&s" },
+          { name: "Rouge Elegance", brand: "Chanel", price: "PKR 3000", color: "Black", leather: "Biker Leather", image: "https://img1.g-star.com/product/c_fill,f_auto,w_1000,ar_0.75,q_auto/v1750689728/D28324-B508-6484-E01/g-star-biker-leather-jacket-black.jpg" },
+          { name: "Emerald Imperial", brand: "Saint Laurent", price: "PKR 1000", color: "Black", leather: "Structured Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqyrcjYYJO0SEOpN_KWeT04iZqxiWtVSG6ng&s" },
+          { name: "Imperial Black", brand: "Prada", price: "PKR 500", color: "Black", leather: "Premium Leather", image: "https://hrclothing.com.pk/cdn/shop/files/66.jpg?v=1735751201" },
+          { name: "Ivory Grace", brand: "Louis Vuitton", price: "PKR 500", color: "White", leather: "Costume Leather", image: "https://leatherskinshop.com/cdn/shop/products/LS-048_Michael_Jackson_White_Thriller_Leather_Jacket_Costume_front_1024x1024.jpg?v=1558811690" },
+          { name: "Vintage Horsebit", brand: "Gucci", price: "PKR 2200", color: "Black", leather: "Vintage Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5eRPz50QicOjyQuLbe5rgyt1bzKAj82sGw&s" },
+          { name: "Onyx Muse", brand: "Saint Laurent", price: "PKR 500", color: "Black", leather: "Smooth Leather", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFqlnnNa8ejar59XbCKeUVsHq9-rsXsWOfA&s" },
+          { name: "Sienna Crest", brand: "Gucci", price: "PKR 900", color: "Brown", leather: "Bomber Leather", image: "https://www.theiconfashion.com/wp-content/uploads/2024/09/Henry-Mens-Brown-Bomber-Leather-Jacket-1-1.webp" },
+          { name: "Pearl Quilted", brand: "Chanel", price: "PKR 2400", color: "Black", leather: "Puffy Leather", image: "https://buffalojackson.com/cdn/shop/files/Mens-puffy-vest-black-leather-vintage_2000x.jpg?v=1698332096" },
+          { name: "Aurora Trunk", brand: "Louis Vuitton", price: "PKR 800", color: "Black", leather: "Casual Leather", image: "https://www.leathercompany.co.uk/images/mens-ashwood-leather-casual-jacket-with-contrast-stripes-black-awm-260-p9741-33867_medium.jpg" },
+          { name: "Saffiano Verde", brand: "Prada", price: "PKR 4600", color: "Brown", leather: "Outdoor Leather", image: "https://buffalojackson.com/cdn/shop/files/Mens-Bridger-Outdoor-Leather-Jacket-Men_2000x.jpg?v=1776179019" },
+          { name: "Citrine Lock", brand: "Hermes", price: "PKR 1200", color: "Brown", leather: "Suede Leather", image: "https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI790P11675001_alternate10?$rl_4x5_pdp$" }
+        ]
+      }
+    };
+
+    let activeCategory = "bags";
+
+    function getActiveCategory() {
+      return compareCatalog[activeCategory];
+    }
+
+    function populateDropdowns() {
+      const category = getActiveCategory();
+
+      $("#compareTitle").text(category.title);
+      $("#compareSubtitle").text(category.subtitle);
+      $("#select1").html(`<option value="" disabled selected hidden>Select Your First ${category.singular}</option>`);
+      $("#select2").html(`<option value="" disabled selected hidden>Select Your Second ${category.singular}</option>`);
+
+      category.products.forEach((product, index) => {
+        $("#select1, #select2").append(`<option value="${index}">${product.brand} ${product.name}</option>`);
+      });
+
+      $("#result").empty();
+    }
+
+    function setCategory(categoryKey) {
+      if (!compareCatalog[categoryKey]) {
+        return;
+      }
+
+      activeCategory = categoryKey;
+
+      $(".category-tab").each(function () {
+        const isActive = $(this).data("category") === categoryKey;
+        $(this).toggleClass("active", isActive);
+        $(this).attr("aria-selected", isActive ? "true" : "false");
+      });
+
+      populateDropdowns();
+    }
+
+    function compareProducts() {
+      const first = $("#select1").val();
+      const second = $("#select2").val();
+
+      if (first === "" || second === "" || first === null || second === null) {
+        return;
+      }
+
+      const category = getActiveCategory();
+      const product1 = category.products[first];
+      const product2 = category.products[second];
+
+      $("#result").html(`
+        <div class="compare-table-wrap">
+          <table class="compare-table table">
+            <tr>
+              <th>Feature</th>
+              <th>${product1.name}</th>
+              <th>${product2.name}</th>
+            </tr>
+            <tr>
+              <td>Image</td>
+              <td><img src="${product1.image}" class="bag-image" alt="${product1.brand} ${product1.name}"></td>
+              <td><img src="${product2.image}" class="bag-image" alt="${product2.brand} ${product2.name}"></td>
+            </tr>
+            <tr>
+              <td>Category</td>
+              <td>${category.label}</td>
+              <td>${category.label}</td>
+            </tr>
+            <tr>
+              <td>Brand</td>
+              <td class="brand-name">${product1.brand}</td>
+              <td class="brand-name">${product2.brand}</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>${product1.price}</td>
+              <td>${product2.price}</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>${product1.color}</td>
+              <td>${product2.color}</td>
+            </tr>
+            <tr>
+              <td>Leather</td>
+              <td>${product1.leather}</td>
+              <td>${product2.leather}</td>
+            </tr>
+          </table>
+        </div>
+      `);
+    }
+
+    function compareBags() {
+      compareProducts();
+    }
+
+    $(document).ready(function () {
+      populateDropdowns();
+
+      $(".category-tab").on("click", function () {
+        setCategory($(this).data("category"));
+      });
+    });
+
+const backToTop = document.getElementById("backToTop");
+const navToggler = document.querySelector(".custom-toggler");
+const navMenu = document.getElementById("navbarSupportedContent");
+const navOverlay = document.querySelector(".nav-overlay");
+
+if (navToggler && navMenu && navOverlay) {
+    const openMenu = () => {
+        navMenu.classList.add("show");
+        navOverlay.classList.add("is-open");
+        navToggler.classList.add("is-open");
+        navToggler.setAttribute("aria-expanded", "true");
+        document.body.classList.add("nav-open");
+    };
+
+    const closeMenu = () => {
+        navMenu.classList.remove("show");
+        navOverlay.classList.remove("is-open");
+        navToggler.classList.remove("is-open");
+        navToggler.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+    };
+
+    navToggler.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        if (navMenu.classList.contains("show")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    navOverlay.addEventListener("click", closeMenu);
+
+    navMenu.querySelectorAll(".nav-link:not(.dropdown-toggle), .dropdown-item").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!navMenu.classList.contains("show")) {
+            return;
+        }
+
+        const clickedInsideNavbar = event.target.closest(".navbar");
+
+        if (!clickedInsideNavbar) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 992) {
+            closeMenu();
+        }
+    });
+}
+
+if (backToTop) {
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+}
+   
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

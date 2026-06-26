@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 300" role="img" aria-labelledby="title desc">
+  <title id="title">NEXTAG NG monogram</title>
+  <desc id="desc">Clean luxury NG monogram with a light champagne N and antique gold G on a transparent background.</desc>
+  <defs>
+    <linearGradient id="champagneN" x1="34" y1="28" x2="226" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4cf"/>
+      <stop offset="0.4" stop-color="#e8c574"/>
+      <stop offset="0.74" stop-color="#b78327"/>
+      <stop offset="1" stop-color="#6f4512"/>
+    </linearGradient>
+    <linearGradient id="oldGold" x1="196" y1="32" x2="356" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d6a04a"/>
+      <stop offset="0.32" stop-color="#a96d17"/>
+      <stop offset="0.64" stop-color="#7a4708"/>
+      <stop offset="1" stop-color="#4b2a02"/>
+    </linearGradient>
+    <filter id="softDepth" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#160b03" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <g fill-rule="evenodd" filter="url(#softDepth)">
+    <!-- Antique gold G, kept open and readable. -->
+    <path fill="url(#oldGold)" d="M236 33c-54 0-94 43-94 108 0 67 42 116 103 116 31 0 58-11 80-30v-50h38v-12h-99v12h34v55c-13 8-28 12-45 12-47 0-77-39-77-103 0-60 29-96 73-96 32 0 54 22 67 66h12V30h-11l-20 17c-17-10-37-14-61-14z"/>
+
+    <!-- Light champagne N for a cleaner, more premium first read. -->
+    <path fill="url(#champagneN)" stroke="#fff1c4" stroke-width="1.8" stroke-opacity="0.5" d="M34 40v11l27 13v171l-27 12v11h86v-11l-28-12V76l113 184h23V63l27-12V40h-83v11l26 12v132L105 40H34z"/>
+
+    <!-- Gold top-right flourish of the G, matching the original mark's luxury serif feel. -->
+    <path fill="url(#oldGold)" d="M274 57l45-21h13v63h-12c-8-25-23-39-46-42z"/>
+  </g>
+</svg>

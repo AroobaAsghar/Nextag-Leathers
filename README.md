@@ -1,2 +1,0 @@
-# nextag
-e-commerce website

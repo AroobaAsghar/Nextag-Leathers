@@ -1,132 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
-     <link rel="stylesheet" href="./css/index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-1"  >
-      <div class="container-fluid">
-        <!-- <img src="./img/Screenshot 2026-05-07 054926.png" alt="NexTag logo" class="navbar-logo"> -->
-    <a class="navbar-brand logo-head fw-bolder" href="#">NexTag</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-1">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-head" href="#" aria-label="NEXTAG home">
+        <img src="./img/ng-monogram.svg" alt="NG monogram" class="navbar-logo">
+        <span class="brand-wordmark">NEXTAG</span>
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#collection">Products</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./wallets.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu luxury-dropdown">
+              <li>
+                <a class="dropdown-item" href="./wallets.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-wallet"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Wallets</span>
+                    <span class="dropdown-copy">Slim leather essentials</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./women's.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                  <span>
+                    <span class="dropdown-title">Women's Bags</span>
+                    <span class="dropdown-copy">Elegant carry pieces</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./jacket.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-user-tie"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Jackets</span>
+                    <span class="dropdown-copy">Premium leather outerwear</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./compare.html">Compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+      data-aos-duration="1000">
+      <span class="hero-subtitle">Luxury Leather Goods</span>
+      <h1 class="hero-title">Shop&nbsp;the&nbsp;Best <span>Selection of Leather&nbsp;Products</span></h1>
+      <p class="hero-copy">Discover premium craftsmanship, elegant finishes, and bold style made for every journey.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn  btn-hero">Shop Collection</a>
+        <a href="#" class="hero-link">Explore More</a>
+      </div>
+      <!-- CUSTOMERS -->
+
+      <div class="d-flex align-items-center gap-3 mt-5 customer-main">
+
+        <div class="customer-box d-flex">
+
+          <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+          <img src="https://randomuser.me/api/portraits/women/45.jpg">
+
+          <img src="https://randomuser.me/api/portraits/women/32.jpg">
+
+        </div>
+
+        <p class="customer-text mb-0">
+          Trusted by 10,000+ <br>
+          happy customers worldwide.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <section class="sec-2">
+    <main class="container">
+      <div style="text-align: center;">
+        <h2 class="fw-bolder"
+          style="font-size: 3rem; font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #1c3934;color: #4b2e1e;">
+          PURE
+          LEATHER</h2>
+        <p style="color: #7b6b5e; max-width: 580px; margin: 12px auto;">NEXTAG — Premium leather goods crafted with
+          timeless elegance.</p>
+      </div>
+
+      <div class="brand-filter-section">
+        <div class="filter-label">◈ LEATHER-PRODUCTS ◈</div>
+        <div id="brandButtonsContainer" class="brand-filter-buttons">
+          <button class="brand-btn active" data-brand="all">ALL ATELIERS</button>
+          <button class="brand-btn" data-brand="Louis Vuitton">LOUIS VUITTON</button>
+          <button class="brand-btn" data-brand="Gucci">GUCCI</button>
+          <button class="brand-btn" data-brand="Hermès">HERMÈS</button>
+          <button class="brand-btn" data-brand="Prada">PRADA</button>
+          <button class="brand-btn" data-brand="Saint Laurent">SAINT LAURENT</button>
+        </div>
+      </div>
+      <div id="products-grid-container" class="products-grid"></div>
+
+    </main>
+
+  </section>
+  <section id="craft" class="py-5 sec-3">
+    <div class="container ">
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-md-6">
+          <img src="./img/stich.jpg" alt="Artisan stitching leather" loading="lazy" class="img-fluid rounded-4 shadow">
+        </div>
+
+        <!-- Content -->
+        <div class="col-md-6">
+
+          <p class="text-uppercase text-secondary" style="letter-spacing: 0.3em; font-size: 0.85rem;">
+            The Craft
+          </p>
+
+          <h2 class="display-5 fw-semibold mt-2" style='font-family: "Cormorant Garamond", serif; color: #4b2e1e;'>Fifty
+            years <em class="fst-italic">at the bench.</em></h2>
+
+          <p class="mt-4 text-muted lh-lg">
+            Our atelier in Florence still cuts every panel by hand. We choose hides for their grain, edge them with
+            beeswax, and saddle-stitch with waxed linen — a method that outlasts the leather itself.
+          </p>
+
+          <!-- Stats -->
+          <div class="row mt-4 text-center">
+
+            <div class="col-4">
+              <div class="fs-2 fw-semibold" style="     color: #4b2e1e;">50+</div>
+              <div class="text-uppercase small text-muted">Years</div>
+            </div>
+
+            <div class="col-4">
+              <div class="fs-2 fw-semibold" style="     color: #4b2e1e;">12</div>
+              <div class="text-uppercase small text-muted">Artisans</div>
+            </div>
+
+            <div class="col-4">
+              <div class="fs-2 fw-semibold" style="     color: #4b2e1e;">100%</div>
+              <div class="text-uppercase small text-muted">Italian</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Premium Brands Section -->
+  <section class="premium-brands py-5">
+    <div class="container text-center">
+
+      <h2 class="display-5 fw-semibold mb-4" style='font-family: "Cormorant Garamond", serif;'>
+        Premium Brands
+      </h2>
+
+      <p class="text-muted mb-5">
+        Inspired by the world’s most iconic luxury fashion houses.
+      </p>
+
+      <div class="row justify-content-center g-4">
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="brand-card py-4">
+            <h5>Louis Vuitton</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="brand-card py-4">
+            <h5>Gucci</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="brand-card py-4">
+            <h5>Hermès</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="brand-card py-4">
+            <h5>Prada</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="brand-card py-4">
+            <h5>Saint Lauren</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="testimonial-section" id="Reviews">
+
+    <div class="section-title">
+      <h2 class="fw-bolder" style="font-family: 'Cormorant Garamond', serif;">What Our Customers Say</h2>
+      <p>
+        Crafted with passion and premium leather materials,
+        our products deliver timeless elegance and lasting quality.
+      </p>
+    </div>
+
+    <div class="testimonial-wrapper">
+
+      <!-- ARROWS -->
+
+      <div class="arrow prev">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="arrow next">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <!-- SLIDER -->
+
+      <div class="testimonial-slider">
+
+        <!-- CARD 1 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            The leather quality exceeded my expectations.
+            Elegant finishing and premium feel — absolutely worth it.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+            <div class="client-info">
+              <h4>Emma Watson</h4>
+              <span>Fashion Designer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            Beautiful craftsmanship and luxury appearance.
+            I receive compliments every time I carry the bag.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+            <div class="client-info">
+              <h4>James Walker</h4>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            Premium stitching, soft leather texture,
+            and classy packaging. Highly recommended.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+            <div class="client-info">
+              <h4>Sophia Lee</h4>
+              <span>Stylist</span>
+            </div>-
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            Their leather jackets have an incredible premium finish.
+            Stylish, comfortable, and durable.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg">
+
+            <div class="client-info">
+              <h4>Daniel Smith</h4>
+              <span>Photographer</span>
+            </div>
+          </div>
+        </div>
+        <!-- CARD 5 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            I was impressed by the luxurious leather texture and
+            attention to detail. Truly a premium experience.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg">
+
+            <div class="client-info">
+              <h4>Olivia Brown</h4>
+              <span>Creative Director</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            The wallet quality is outstanding. Elegant design,
+            durable stitching, and perfect finishing.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/men/51.jpg">
+
+            <div class="client-info">
+              <h4>Michael Carter</h4>
+              <span>Business Consultant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            Exceptional craftsmanship with a timeless leather style.
+            The bag feels classy and very comfortable to use.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg">
+
+            <div class="client-info">
+              <h4>Isabella Taylor</h4>
+              <span>Fashion Blogger</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+
+        <div class="testimonial-card">
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p class="review">
+            Their leather products perfectly combine luxury
+            and durability. I’ll definitely shop again.
+          </p>
+
+          <div class="client">
+            <img src="https://randomuser.me/api/portraits/men/64.jpg">
+
+            <div class="client-info">
+              <h4>William Harris</h4>
+              <span>Architect</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="signature-craft">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="craft-eyebrow">Signature Craft</span>
+          <h2>Where Premium Leather Becomes Timeless Style</h2>
+          <p>
+            Every NexTag piece is shaped around refined texture, careful stitching, and elegant finishing, made to feel
+            luxurious from the first touch and dependable through everyday wear.
+          </p>
+
+          <div class="craft-feature-list">
+            <div class="craft-feature">
+              <span><i class="fa-solid fa-gem"></i></span>
+              <div>
+                <h5>Selected Materials</h5>
+                <p>Rich leather grains chosen for softness, structure, and long-lasting character.</p>
+              </div>
+            </div>
+            <div class="craft-feature">
+              <span><i class="fa-solid fa-scissors"></i></span>
+              <div>
+                <h5>Detailed Finishing</h5>
+                <p>Clean edges, polished hardware, and balanced silhouettes for a premium final look.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="craft-showcase">
+            <div class="craft-image craft-image-large craft-shop-image">
+              <img src="./img/about.webp" alt="NexTag premium leather craft detail">
+            </div>
+            <div class="craft-stack">
+              <div class="craft-image">
+                <img src="./img/shop-2.jpg" alt="NexTag leather shop storefront">
+              </div>
+              <div class="craft-note">
+                <span>Luxury Detail</span>
+                <strong>Hand-finished texture with a polished everyday presence.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+
+<section class="sec-4">
+  <div class="container text-center">
+
+   <h2 class="display-5 fw-semibold fw-bolder mb-4"
+    style='font-family: "Cormorant Garamond", serif; color: #4b2e1e;'>
+    Style Gallery
+</h2>
+    <p class="text-muted mb-5">
+      Discover premium leather pieces inspired by timeless elegance and modern luxury.
+    </p>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <img src="./img/gucci-4.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/lv-4.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/lv-5.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/prada-4.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/prada-5.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/shoes.jpg" alt="" class="img-fluid gallery-img">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NexTag</h2>
+        </div>
+        <div class="footer-column">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./women's.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-1" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-      <section class="hero">
-  <div class="hero-content" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"data-aos-duration="1000">
-    <span class="hero-subtitle">Luxury Leather Goods</span>
-    <h1 class="hero-title">Shop&nbsp;the&nbsp;Best <span>Selection of Leather&nbsp;Products</span></h1>
-    <p class="hero-copy">Discover premium craftsmanship, elegant finishes, and bold style made for every journey.</p>
-    <div class="hero-actions">
-      <a href="#" class="btn  btn-hero">Shop Collection</a>
-      <a href="#" class="hero-link">Explore More</a>
-    </div>
-  </div>
-</section>
-<section>
-<div class="container text-center">
-  <div class="row">
-    <div class="col-lg-4">
-      <h2 class="fw-bolder">Worlds premium design brands</h2>
-      <p class="text-muted">Discover timeless craftsmanship and modern elegance from the world’s most trusted luxury design brands.  
-Carefully curated collections made to elevate  
-your lifestyle with style, quality, and sophistication.</p>
-<p class="text-muted">Explore premium collections crafted by world-class design brands,where luxury, quality, and timeless style come together.</p>
+        </div>
+        <!-- Collections -->
+        <div class="footer-column">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="./wallets.html">Men's Wallet</a></li>
+            <li><a href="./women's.html">Women's Bag</a></li>
+            <li><a href="./jacket.html">Jacket's</a></li>
+          </ul>
+        </div>
 
-    </div>
-    <div class="col-lg-4">
-<img src="./img/about.webp" alt="" class="img-fluid">
-    </div>
-    <div class="col-lg-4">
-<h2><i class="fa-regular fa-cloud"></i>soft fabric</h2>
-    </div>
-    </div>
-     </div>
-</section>
+        <!-- Company -->
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+          </ul>
+        </div>
 
-<footer>
-  <div class="container">
-    <div class="footer-content">
-      <!-- Brand -->
-      <div class="footer-brand">
-        <h2>NexTag</h2>
-      </div>
-   <div class="footer-column">
-        <h5>Links</h5>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Brands</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-      </div>
-      <!-- Collections -->
-      <div class="footer-column">
-        <h5>Collections</h5>
-        <ul>
-          <li><a href="#">All Products</a></li>
-          <li><a href="#">Leather Bags</a></li>
-          <li><a href="#">Wallets</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-      </div>
-
-      <!-- Company -->
-      <div class="footer-column">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Process</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Journal</a></li>
-        </ul>
-      </div>
-
-      <!-- About
+        <!-- About
       <div class="footer-column">
         <h5>About</h5>
         <ul>
@@ -134,47 +605,429 @@ your lifestyle with style, quality, and sophistication.</p>
         </ul>
       </div> -->
 
-      <!-- Support -->
-      <div class="footer-column">
-        <h5>Support</h5>
-        <ul>
-          <li><a href="#">Care Guide</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="footer-newsletter">
-        <h5>Newsletter</h5>
-        <div class="newsletter-input">
-          <input type="email" placeholder="Enter your email">
-          <button><i class="fas fa-arrow-right"></i></button>
-        </div>
-        <div class="social-icons">
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <div class="newsletter-input">
+            <input type="email" placeholder="Enter your email">
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>&copy; NexTag. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
-      <script>
-  AOS.init({
-    once: true
-  });
 
-    </script>
+      <div class="shop-luxury-section">
+        <i class="fas fa-store" style="font-size: 2.2rem; color: #d5aa71;"></i>
+        <h3 style="margin: 16px 0 8px; font-family: 'Cormorant Garamond', serif;">NEXTAG ATELIER</h3>
+        <p><i class="fas fa-map-pin"></i> Karachi — Pakistan | Walk-in by appointment</p>
+        <p>+92 11 111 111 | nextag.com</p>
+        <p style="margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Premium leather goods
+          crafted with timeless elegance, modern luxury, and exceptional quality.</p>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; NexTag. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script src="./js/nextag.js"></script>
+
+  <script>
+    AOS.init({
+      once: true
+    });
+
+  </script>
+  <script>
+    (function () {
+
+
+      // =========================
+      // PRODUCTS DATA
+      // =========================
+      const productsData = [
+
+        {
+          id: 1,
+          brand: "Louis Vuitton",
+          name: "Black Wallet",
+          price: "PKR 2500",
+          rating: 4.8,
+          reviews: 124,
+          feature: "Taurillon leather, iconic LV initial",
+          primaryImg:
+            "https://hub.com.pk/cdn/shop/files/MW0343-035_2_400x.jpg?v=1757147995",
+          hoverImg:
+            "https://hub.com.pk/cdn/shop/files/MW0343-035_4_400x.jpg?v=1757147995"
+        },
+
+        {
+          id: 2,
+          brand: "Gucci",
+          name: "Ladies Bag",
+          price: "PKR 6000",
+          rating: 4.7,
+          reviews: 98,
+          feature: "Piston clasp, natural grain leather",
+          primaryImg:
+            "https://i.pinimg.com/1200x/01/10/f7/0110f730b4bbe56af52dedb583a4915c.jpg",
+          hoverImg:
+            "https://i.pinimg.com/736x/73/9d/39/739d395dc6b7cf167ebd1034c2017743.jpg"
+        },
+
+        {
+          id: 3,
+          brand: "Hermès",
+          name: "Birkin 30",
+          price: "PKR 18000",
+          rating: 5.0,
+          reviews: 47,
+          feature: "Togo leather, hand-stitched",
+          primaryImg:
+            "https://i.pinimg.com/1200x/c1/fc/31/c1fc31f1c1c9ff074422ff219c8d0c47.jpg",
+          hoverImg:
+            "https://i.pinimg.com/736x/eb/ff/f3/ebfff3d470a10e180932492f0759acc2.jpg"
+        },
+
+        {
+          id: 4,
+          brand: "Prada",
+          name: "Galleria Saffiano",
+          price: "PKR 13000",
+          rating: 4.6,
+          reviews: 210,
+          feature: "Saffiano leather, dual handles",
+          primaryImg:
+            "https://images.pexels.com/photos/12495669/pexels-photo-12495669.jpeg?auto=compress&cs=tinysrgb&w=900",
+          hoverImg:
+            "https://images.pexels.com/photos/12495665/pexels-photo-12495665.jpeg?auto=compress&cs=tinysrgb&w=900"
+        }
+
+      ];
+
+      // =========================
+      // VARIABLES
+      // =========================
+      let currentBrand = "all";
+      let cart = [];
+
+      // =========================
+      // RENDER PRODUCTS
+      // =========================
+      function renderProducts() {
+
+        const container =
+          document.getElementById("products-grid-container");
+
+        if (!container) return;
+
+        // FILTER PRODUCTS
+        const filteredProducts =
+          currentBrand.toLowerCase() === "all"
+            ? productsData
+            : productsData.filter(product =>
+              product.brand.toLowerCase() ===
+              currentBrand.toLowerCase()
+            );
+
+        // NO PRODUCTS
+        if (filteredProducts.length === 0) {
+
+          container.innerHTML = `
+        <div class="text-center py-5">
+          <h3>No Products Found</h3>
+        </div>
+      `;
+
+          return;
+        }
+
+        // RENDER
+        container.innerHTML = filteredProducts.map(product => {
+
+          const stars =
+            '<i class="fas fa-star"></i>'.repeat(Math.floor(product.rating)) +
+            (product.rating % 1 !== 0
+              ? '<i class="fas fa-star-half-alt"></i>'
+              : '');
+
+          return `
+
+        <div class="product-card" data-id="${product.id}">
+
+          <!-- IMAGE -->
+          <div class="product-img-container">
+
+            <img
+              class="product-img"
+              src="${product.primaryImg}"
+              alt="${product.name}"
+              loading="lazy"
+            >
+
+            <img
+              class="product-img-hover"
+              src="${product.hoverImg}"
+              alt="${product.name}"
+              loading="lazy"
+            >
+
+          </div>
+
+          <!-- CONTENT -->
+          <div class="product-info">
+
+            <div class="product-brand">
+              ${product.brand}
+            </div>
+
+            <div class="product-name">
+              ${product.name}
+            </div>
+
+            <div class="product-price">
+              ${product.price}
+            </div>
+
+            <div class="product-rating">
+              <span class="stars">${stars}</span>
+              <span>(${product.reviews})</span>
+            </div>
+
+            <div class="feature-summary">
+              ${product.feature}
+            </div>
+
+            <div class="card-actions">
+
+              <button
+                class="btn-add-cart add-to-cart-btn"
+                data-id="${product.id}"
+              >
+
+                <i class="fas fa-shopping-bag"></i>
+                Add to Cart
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+        }).join("");
+
+        // =========================
+        // ADD TO CART
+        // =========================
+        document.querySelectorAll(".add-to-cart-btn")
+          .forEach(button => {
+
+            button.addEventListener("click", function (event) {
+
+              event.stopPropagation();
+
+              const productId =
+                parseInt(this.dataset.id);
+
+              const selectedProduct =
+                productsData.find(
+                  product => product.id === productId
+                );
+
+              if (selectedProduct) {
+
+                cart.push({ ...selectedProduct });
+
+                alert(
+                  `✓ "${selectedProduct.name}" added to cart`
+                );
+
+                console.log(cart);
+              }
+            });
+          });
+      }
+
+
+      // =========================
+      // SLIDER
+      // =========================
+      function initSlider() {
+
+        const slides =
+          document.querySelectorAll(".slide");
+
+        const dotsContainer =
+          document.getElementById("sliderDots");
+
+        const prevBtn =
+          document.getElementById("prevSlideBtn");
+
+        const nextBtn =
+          document.getElementById("nextSlideBtn");
+
+        let currentIndex = 0;
+
+        let autoInterval;
+
+        // UPDATE
+        function updateSlides(index) {
+
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+          });
+
+          document.querySelectorAll(".dot")
+            .forEach((dot, i) => {
+              dot.classList.toggle("active", i === index);
+            });
+
+          currentIndex = index;
+        }
+
+        // DOTS
+        function createDots() {
+
+          if (!dotsContainer) return;
+
+          dotsContainer.innerHTML = "";
+
+          slides.forEach((_, index) => {
+
+            const dot =
+              document.createElement("div");
+
+            dot.className =
+              "dot" + (index === 0 ? " active" : "");
+
+            dot.addEventListener("click", () => {
+
+              clearInterval(autoInterval);
+
+              updateSlides(index);
+
+              startAuto();
+            });
+
+            dotsContainer.appendChild(dot);
+          });
+        }
+
+        // NEXT
+        function nextSlide() {
+          updateSlides(
+            (currentIndex + 1) % slides.length
+          );
+        }
+
+        // PREVIOUS
+        function prevSlide() {
+          updateSlides(
+            (currentIndex - 1 + slides.length) %
+            slides.length
+          );
+        }
+
+        // AUTO
+        function startAuto() {
+          autoInterval = setInterval(nextSlide, 4000);
+        }
+
+        // BUTTONS
+        if (prevBtn) {
+
+          prevBtn.addEventListener("click", () => {
+
+            clearInterval(autoInterval);
+
+            prevSlide();
+
+            startAuto();
+          });
+        }
+
+        if (nextBtn) {
+
+          nextBtn.addEventListener("click", () => {
+
+            clearInterval(autoInterval);
+
+            nextSlide();
+
+            startAuto();
+          });
+        }
+
+        createDots();
+
+        startAuto();
+      }
+
+      // =========================
+      // FILTER BUTTONS
+      // =========================
+      function initFilters() {
+
+        const filterButtons =
+          document.querySelectorAll(".brand-btn");
+
+        filterButtons.forEach(button => {
+
+          button.addEventListener("click", function () {
+
+            // REMOVE ACTIVE
+            filterButtons.forEach(btn =>
+              btn.classList.remove("active")
+            );
+
+            // ADD ACTIVE
+            this.classList.add("active");
+
+            // SET BRAND
+            currentBrand =
+              this.dataset.brand.trim();
+
+            console.log(
+              "Selected Brand:",
+              currentBrand
+            );
+
+            // RENDER PRODUCTS
+            renderProducts();
+          });
+        });
+      }
+      // =========================
+      // DOM LOADED
+      // =========================
+      document.addEventListener("DOMContentLoaded", () => {
+
+        initSlider();
+
+        renderProducts();
+
+        initFilters();
+
+      });
+
+    })();
+  </script>
+
+  </script>
 </body>
+
 </html>

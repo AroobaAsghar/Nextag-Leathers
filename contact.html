@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXTAG | Contact Us</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Cinzel:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --champagne: #d8ad68;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        img,
+        iframe {
+            max-width: 100%;
+        }
+
+        /* ================= HERO SECTION ================= */
+
+        .contact-hero {
+            position: relative;
+            min-height: 72vh;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+
+            /* background */
+            background:
+                linear-gradient(rgba(10, 7, 5, 0.70), rgba(10, 7, 5, 0.55)),
+                url('./img/pexels-ante-emmanuel-3691197-33507830.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* layered overlays for a more premium look */
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(circle at 18% 28%, rgba(216, 173, 104, 0.28), transparent 45%),
+                radial-gradient(circle at 80% 18%, rgba(200, 155, 93, 0.18), transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.35), transparent 55%);
+        }
+
+        /* subtle grain (CSS only) */
+        .hero-overlay::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+            opacity: 0.10;
+            mix-blend-mode: overlay;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 60px 0;
+        }
+
+        .hero-subtitle {
+            color: #d8ad68;
+            letter-spacing: 0.28em;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.05;
+            font-size: clamp(2.1rem, 4.6vw, 4.1rem);
+            margin: 0;
+        }
+
+        .h1-span {
+            font-style: italic;
+            color: #d8ad68;
+        }
+
+        .hero-lead {
+            max-width: 720px;
+            margin: 18px auto 26px;
+            font-size: 15px;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.86);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-card {
+            margin: 30px auto 0;
+            max-width: 860px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 22px;
+            padding: 26px 22px;
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-pill-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.20);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 13px;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-pill i {
+            color: #d8ad68;
+        }
+
+        .btn-hero-primary {
+            background: linear-gradient(135deg, #d8ad68, #9c6239);
+            border: none;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            box-shadow: 0 14px 32px rgba(156, 98, 57, 0.25);
+            transition: 0.25s ease;
+        }
+
+        .btn-hero-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 44px rgba(156, 98, 57, 0.35);
+            color: #fff;
+        }
+
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            transition: 0.25s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.28);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media(max-width:992px) {
+            .hero-content {
+                padding: 48px 0;
+            }
+
+            .hero-card {
+                padding: 22px 16px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .contact-hero {
+                min-height: 62vh;
+            }
+
+            .hero-content {
+                padding: 38px 0;
+            }
+
+            .hero-lead {
+                font-size: 14px;
+            }
+        }
+
+        /* ================= CONTACT SECTION ================= */
+
+        .contact-wrapper {
+
+            background:
+                linear-gradient(to bottom, #f8f5ef, #f1e8db);
+
+            padding: 110px 0;
+        }
+
+        /* LEFT SIDE */
+
+        .contact-tag {
+
+            color: #b88646;
+
+            letter-spacing: 3px;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .contact-info h2 {
+
+            font-size: 58px;
+
+            margin: 18px 0;
+
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .contact-info p {
+
+            color: #555;
+
+            line-height: 1.9;
+
+            margin-bottom: 35px;
+        }
+
+        .info-card {
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 24px;
+
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.07);
+        }
+
+        .info-box {
+
+            display: flex;
+
+            gap: 18px;
+
+            margin-bottom: 28px;
+        }
+
+        .info-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box i {
+
+            width: 58px;
+            height: 58px;
+
+            background:
+                linear-gradient(135deg, #d8ad68, #9c6239);
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            font-size: 18px;
+        }
+
+        .info-box h5 {
+
+            margin-bottom: 6px;
+
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .info-box span {
+
+            color: #666;
+
+            line-height: 1.7;
+        }
+
+        /* ================= CONTACT FORM ================= */
+
+        .contact-card {
+
+            background:
+                rgba(255, 255, 255, 0.72);
+
+            backdrop-filter: blur(12px);
+
+            padding: 55px;
+
+            border-radius: 28px;
+
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            box-shadow:
+                0 12px 45px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-header {
+
+            margin-bottom: 30px;
+        }
+
+        .form-header span {
+
+            color: #b88646;
+
+            letter-spacing: 3px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .form-header h3 {
+
+            margin-top: 10px;
+
+            font-size: 44px;
+
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .contact-form {
+
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .contact-form .row {
+            --bs-gutter-y: 22px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+
+            width: 100%;
+
+            padding: 18px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 14px;
+
+            outline: none;
+
+            font-size: 15px;
+
+            background: rgba(255, 255, 255, 0.9);
+
+            transition: 0.3s;
+        }
+
+        .contact-form textarea {
+
+            height: 170px;
+
+            resize: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+
+            border-color: #c89b5d;
+
+            box-shadow:
+                0 0 0 5px rgba(200, 155, 93, 0.12);
+        }
+
+        .contact-form button {
+
+            border: none;
+
+            background:
+                linear-gradient(135deg, #d8ad68, #9c6239);
+
+            color: white;
+
+            padding: 18px;
+
+            border-radius: 14px;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 24px rgba(156, 98, 57, 0.25);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #3B2417;
+
+            color: white;
+
+            padding: 80px 0 20px;
+        }
+
+        .footer-content {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 40px;
+        }
+
+        .footer-brand h2 {
+
+            color: #ffc857;
+
+            font-size: 42px;
+
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .footer-column h5,
+        .footer-newsletter h5 {
+
+            color: #ffc857;
+
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+            font-size: 14px;
+
+            letter-spacing: 2px;
+        }
+
+        .footer-column ul {
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+        .footer-column ul li {
+
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+
+            color: rgba(255, 255, 255, 0.8);
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+
+            color: #ffc857;
+        }
+
+        .newsletter-input {
+
+            display: flex;
+
+            margin-bottom: 20px;
+        }
+
+        .newsletter-input input {
+
+            flex: 1;
+
+            padding: 14px;
+
+            border: none;
+
+            outline: none;
+        }
+
+        .newsletter-input button {
+
+            width: 55px;
+
+            border: none;
+
+            background: #ffc857;
+
+            color: black;
+        }
+
+        .social-icons {
+
+            display: flex;
+
+            gap: 12px;
+        }
+
+        .social-icon {
+
+            width: 42px;
+            height: 42px;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+
+            background: #ffc857;
+
+            color: black;
+        }
+
+        .footer-bottom {
+
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            margin-top: 50px;
+
+            padding-top: 20px;
+
+            text-align: center;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:992px) {
+
+            .contact-hero h1 {
+                font-size: 58px;
+            }
+
+            .contact-info {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media(max-width:768px) {
+
+            .contact-hero {
+                height: 65vh;
+            }
+
+            .contact-hero h1 {
+                font-size: 46px;
+            }
+
+            .contact-info h2 {
+                font-size: 42px;
+            }
+
+            .contact-card {
+                padding: 35px 25px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .map-heading {
+            text-align: center;
+            padding-top: 3em;
+            padding-bottom: 1em;
+        }
+
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            min-height: 320px;
+            border-radius: 18px;
+        }
+
+        .map-section {
+            padding-bottom: clamp(3rem, 6vw, 5rem);
+        }
+.main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  width: 100%;
+  min-height: 68px;
+  padding: 6px 0;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(116, 78, 44, 0.22), transparent 28%),
+    linear-gradient(90deg, #1c1108 0%, #110b06 55%, #070403 100%);
+  border-bottom: 1px solid rgba(244, 226, 198, 0.08);
+  box-shadow: 0 16px 34px rgba(17, 9, 4, 0.22);
+
+}
+
+.nav-shell {
+  position: relative;
+  min-height: 56px;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(0.04rem, 0.12vw, 0.1rem);
+  min-width: 0;
+  color: #fff8ed;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #ffffff;
+  opacity: 0.94;
+  transform: translateY(-1px);
+}
+
+.navbar-logo {
+  display: block;
+  width: auto;
+  height: clamp(34px, 3vw, 44px);
+  flex: 0 0 auto;
+  object-fit: contain;
+  background: transparent;
+  filter: drop-shadow(0 7px 16px rgba(0, 0, 0, 0.28));
+}
+
+.brand-wordmark {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #e7c16e;
+  background: linear-gradient(90deg, #f5dfaa 0%, #d8a943 48%, #fff0c0 58%, #a86f17 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(0.78rem, 0.82vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: clamp(0.2em, 0.45vw, 0.3em);
+  line-height: 1;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.32);
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav {
+  column-gap: clamp(1rem, 1.65vw, 2.15rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    padding-inline-end: 0;
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: rgba(255, 248, 237, 0.92);
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 0;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  font-size: clamp(0.78rem, 0.88vw, 0.94rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #e8bd75;
+}
+
+.main-navbar .navbar-nav .nav-link.active {
+  color: #d8ad68;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.main-navbar .dropdown {
+  position: relative;
+}
+
+.main-navbar .dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.main-navbar .dropdown-toggle.show::after,
+.main-navbar .dropdown:hover .dropdown-toggle::after {
+  transform: scaleX(1);
+}
+
+.luxury-dropdown {
+  min-width: 255px;
+  padding: 0.7rem;
+  margin-top: 0.9rem;
+  border: 1px solid rgba(213, 170, 113, 0.34);
+  border-radius: 14px;
+  background:
+    linear-gradient(145deg, rgba(31, 20, 11, 0.97), rgba(71, 43, 23, 0.95)),
+    radial-gradient(circle at top left, rgba(213, 170, 113, 0.18), transparent 42%);
+  box-shadow:
+    0 22px 54px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 238, 198, 0.12);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+}
+
+.luxury-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .main-navbar .dropdown:hover>.luxury-dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.luxury-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 10px;
+  color: rgba(255, 248, 230, 0.92);
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+
+.luxury-dropdown .dropdown-item:hover,
+.luxury-dropdown .dropdown-item:focus {
+  color: #ffd889;
+  background: rgba(213, 170, 113, 0.13);
+  transform: translateX(4px);
+}
+
+.main-navbar .luxury-dropdown .dropdown-item.active {
+  color: #ffd889;
+  background: rgba(213, 170, 113, 0.16);
+}
+
+.dropdown-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  color: #d5aa71;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(213, 170, 113, 0.36);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.luxury-dropdown .dropdown-item:hover .dropdown-icon,
+.luxury-dropdown .dropdown-item:focus .dropdown-icon {
+  color: #ffd889;
+  background: rgba(213, 170, 113, 0.18);
+  border-color: rgba(255, 216, 137, 0.72);
+}
+
+.dropdown-title,
+.dropdown-copy {
+  display: block;
+}
+
+.dropdown-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.dropdown-copy {
+  margin-top: 0.18rem;
+  color: rgba(255, 248, 230, 0.62);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-inline-start: clamp(1.35rem, 2.4vw, 2.75rem);
+  padding: 10px 22px;
+  color: #1d1108;
+  background:
+    linear-gradient(135deg, #fff2cc 0%, #d8ad68 48%, #a2673d 100%);
+  border: 1px solid rgba(255, 238, 201, 0.62);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 10px 22px rgba(0, 0, 0, 0.24);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.navbar-cta:hover,
+.navbar-cta:focus {
+  color: #120905;
+  border-color: rgba(255, 246, 225, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 14px 26px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.18);
+  padding: 7px 9px;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(216, 173, 104, 0.2);
+}
+
+@media (max-width: 991.98px) {
+
+
+  .nav-shell {
+    min-height: 56px;
+  }
+
+  .navbar-brand {
+    gap: 0.16rem;
+  }
+
+  .navbar-logo {
+    height: 36px;
+  }
+
+  .brand-wordmark {
+    font-size: 0.76rem;
+    letter-spacing: 0.16em;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 10px;
+    background: rgba(143, 91, 52, 0.22);
+    border: 1px solid rgba(244, 226, 198, 0.22);
+  }
+
+  .navbar-toggler:hover {
+    background: rgba(166, 104, 60, 0.34);
+    border-color: rgba(244, 226, 198, 0.34);
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    background: #a2673d;
+    border-color: rgba(255, 242, 222, 0.54);
+    box-shadow:
+      inset 0 0 0 2px rgba(255, 255, 255, 0.12),
+      0 10px 24px rgba(0, 0, 0, 0.28);
+  }
+
+  .navbar-toggler-icon {
+    position: relative;
+    width: 18px;
+    height: 14px;
+    background-image: none;
+    border-top: 2px solid #fff8ed;
+    border-bottom: 2px solid #fff8ed;
+    transition: border-color 0.18s ease;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: #fff8ed;
+    transform: translateY(-50%);
+    transition: transform 0.22s ease, opacity 0.18s ease;
+  }
+
+  .navbar-toggler-icon::after {
+    opacity: 0;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    opacity: 1;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+
+
+  /* .navbar-collapse.show {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+
+  .navbar-collapse.collapsing {
+    opacity: 0.45;
+    transform: translateY(-8px);
+  }
+
+  .navbar-nav {
+    gap: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 14px;
+    color: #fffaf2;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #fff5dc;
+    background: rgba(255, 232, 185, 0.12);
+    border-color: rgba(255, 231, 188, 0.2);
+    transform: translateX(3px);
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #ffe08f;
+    background: linear-gradient(90deg, rgba(255, 207, 106, 0.18), rgba(255, 221, 155, 0.08));
+    border-color: rgba(255, 215, 128, 0.72);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 246, 225, 0.12),
+      0 8px 18px rgba(68, 35, 13, 0.12);
+  }
+
+  .navbar-nav .nav-link::after {
+    left: 14px;
+    right: 14px;
+    bottom: 7px;
+    width: auto;
+    height: 2px;
+    background: rgba(255, 231, 160, 0.72);
+  }
+
+  .navbar-cta {
+    width: 100%;
+    min-height: 44px;
+    margin: 12px 0 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.45),
+      0 10px 20px rgba(68, 35, 13, 0.18);
+  }
+
+  .luxury-dropdown {
+    position: static !important;
+    width: 100%;
+    min-width: 0;
+    margin: 0.35rem 0 0.5rem;
+    padding: 0.55rem;
+    background: rgba(35, 21, 12, 0.54);
+    border-color: rgba(255, 216, 137, 0.22);
+    box-shadow: inset 0 1px 0 rgba(255, 238, 198, 0.08);
+    transform: none;
+  }
+
+  .luxury-dropdown.show {
+    transform: none;
+  }
+
+  .luxury-dropdown .dropdown-item {
+    padding: 0.72rem 0.75rem;
+  }
+
+  .luxury-dropdown .dropdown-item:hover,
+  .luxury-dropdown .dropdown-item:focus {
+    transform: translateX(3px);
+  }
+
+
+
+
+  .main-navbar {
+    position: fixed;
+    overflow: visible;
+    z-index: 5000;
+    min-height: 66px;
+    padding: 5px 0;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 66px;
+    left: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    right: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    z-index: 5001;
+
+    margin-top: 0;
+    padding: 18px;
+
+    background:
+      linear-gradient(145deg,
+        rgba(184, 116, 66, 0.96),
+        rgba(142, 83, 45, 0.98));
+
+    border-radius: 15px;
+    border: 1px solid rgba(255, 231, 188, 0.18);
+
+    box-shadow:
+      0 20px 44px rgba(16, 8, 3, 0.38);
+
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr) 1.5fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.footer-brand h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #ffbf3f;
+}
+
+.footer-column h5 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  color: #ffc857;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+  line-height: 1.6;
+}
+
+.footer-column ul li a:hover {
+  color: #ffc857;
+}
+
+.footer-newsletter h5 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  color: #ffc857;
+  font-family: 'Poppins', sans-serif;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-input input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-input input:focus {
+  outline: none;
+  border-color: #ffc857;
+  background-color: rgba(255, 200, 87, 0.05);
+}
+
+.newsletter-input button {
+  padding: 0.8rem 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffc857;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-input button:hover {
+  border-color: #ffc857;
+  background-color: rgba(255, 200, 87, 0.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.social-icon:hover {
+  border-color: #ffc857;
+  color: #ffc857;
+  background-color: rgba(255, 200, 87, 0.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+
+  .footer-newsletter {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-newsletter {
+    grid-column: 1 / -1;
+  }
+
+  .newsletter-input {
+    flex-direction: column;
+  }
+
+  .newsletter-input button {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: auto;
+    align-items: flex-start;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 1.25rem 1.5rem 2rem 1.5rem;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: auto;
+    padding-top: 4.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-content {
+    padding: 1rem 1rem 1.75rem 1rem;
+    margin-top: 0;
+    /* left: 10%; */
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.95rem, 9.6vw, 3rem);
+    line-height: 1.05;
+    margin-bottom: 0.8rem;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .hero-title span,
+  .hero-title .span-text {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .hero-copy {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.shop-luxury-section {
+  /* background: #1c3934; */
+  background: #9C6239;
+
+
+
+
+
+  border-radius: 48px;
+  padding: 40px 32px;
+  margin: 56px 0 32px;
+  text-align: center;
+
+  color: whitesmoke;
+}
+
+footer {
+  background: #3B2417;
+  padding: clamp(3rem, 5vw, 5rem) 0 2rem;
+  /* margin-top: 70px; */
+  border-top: 1px solid var(--champagne);
+  text-align: center;
+  color: #261311;
+  color: white;
+}
+
+/* Contact page responsive polish: keeps Bootstrap containers/gutters intact. */
+@media (max-width: 1024px) {
+  .contact-hero {
+    min-height: auto;
+    padding-top: 5.25rem;
+    padding-bottom: 3.5rem;
+    background-attachment: scroll;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .contact-wrapper {
+    padding: 72px 0;
+  }
+
+  .contact-info {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact-info h2,
+  .form-header h3 {
+    font-size: clamp(2.25rem, 5vw, 3.4rem);
+  }
+
+  .contact-card {
+    padding: clamp(2rem, 4vw, 3rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-hero {
+    height: auto;
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .contact-hero .hero-content {
+    padding: 0 0.25rem;
+  }
+
+  .hero-card {
+    width: min(100%, 520px);
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 16px 18px;
+    border-radius: 16px;
+    background: rgba(20, 12, 8, 0.54);
+    border-color: rgba(255, 238, 201, 0.16);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.24);
+  }
+
+  .hero-pill-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .hero-pill {
+    justify-content: center;
+    min-width: 0;
+    padding: 8px 7px;
+    font-size: 11px;
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .hero-pill i {
+    flex: 0 0 auto;
+  }
+
+  .hero-subtitle {
+    display: block;
+    max-width: 100%;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+  }
+
+  .hero-title,
+  .hero-title span,
+  .hero-title .h1-span {
+    white-space: normal;
+  }
+
+  .hero-title {
+    margin-top: 8px;
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .hero-lead {
+    margin: 14px auto 18px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .contact-wrapper {
+    padding: 54px 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .contact-info h2 {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+  }
+
+  .contact-info p {
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+  }
+
+  .info-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .info-box {
+    align-items: flex-start;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .info-box i {
+    width: 48px;
+    height: 48px;
+  }
+
+  .info-box span {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-card {
+    padding: 26px 18px;
+    border-radius: 20px;
+  }
+
+  .form-header {
+    text-align: center;
+  }
+
+  .form-header span {
+    letter-spacing: 0.18em;
+  }
+
+  .form-header h3 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    min-height: 52px;
+    padding: 14px 15px;
+    font-size: 0.95rem;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+  }
+
+  .contact-form button {
+    min-height: 52px;
+    padding: 14px;
+  }
+
+  .map-heading {
+    padding-top: 2.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .map-heading h2 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .map-container iframe {
+    height: 320px;
+    min-height: 320px;
+    border-radius: 14px;
+  }
+
+  .map-section {
+    padding-bottom: 3rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .shop-luxury-section {
+    margin: 36px 0 28px;
+    padding: 28px 18px;
+    border-radius: 24px;
+  }
+
+  .shop-luxury-section p {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-card {
+    padding: 18px 14px 16px;
+  }
+
+  .hero-pill-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <div class="container nav-shell">
+      <a class="navbar-brand" href="#" aria-label="NexTag home">
+        <img src="./img/ng-monogram.svg" alt="NG monogram" class="navbar-logo">
+        <span class="brand-wordmark">NEXTAG</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-lg-center ms-lg-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="./women's.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu luxury-dropdown">
+              <li>
+                <a class="dropdown-item" href="./wallets.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-wallet"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Wallets</span>
+                    <span class="dropdown-copy">Slim leather essentials</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./women's.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                  <span>
+                    <span class="dropdown-title">Women's Bags</span>
+                    <span class="dropdown-copy">Elegant carry pieces</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./jacket.html">
+                  <span class="dropdown-icon"><i class="fa-solid fa-user-tie"></i></span>
+                  <span>
+                    <span class="dropdown-title">Men's Jackets</span>
+                    <span class="dropdown-copy">Premium leather outerwear</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./compare.html">Compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <a class="navbar-cta" href="#">Shop Now</a> -->
+      </div>
+    </div>
+  </nav>
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero" aria-label="Contact hero">
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container position-relative hero-content">
+
+            <div class="hero-card">
+
+                <div class="hero-pill-row" aria-hidden="true">
+                    <span class="hero-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Premium Craft</span>
+                    <span class="hero-pill"><i class="fa-solid fa-truck-fast"></i> Karachi Delivery</span>
+                    <span class="hero-pill"><i class="fa-solid fa-headset"></i> 24/7 Support</span>
+                </div>
+
+                <span class="hero-subtitle">PREMIUM LEATHER EXPERIENCE</span>
+
+                <h1 class="hero-title">Contact <span class="h1-span">NEXTAG</span></h1>
+
+                <p class="hero-lead">
+                    Crafted with timeless elegance and luxury. Reach out for collaborations, support, or premium leather
+                    inquiries.
+                </p>
+
+                <div class="hero-actions mt-3">
+                    <a class="btn btn-hero-primary" href="#contact-form">
+                        <i class="fa-solid fa-paper-plane me-2"></i>Send a Message
+                    </a>
+                    <a class="btn btn-hero-secondary" href="#store-map">
+                        <i class="fa-solid fa-location-dot me-2"></i>Visit Store
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-wrapper" id="contact-form">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- LEFT -->
+
+                <div class="col-lg-5">
+
+                    <div class="contact-info">
+
+                        <span class="contact-tag">
+                            GET IN TOUCH
+                        </span>
+
+                        <h2>
+                            We'd Love To Hear From You
+                        </h2>
+
+                        <p>
+                            Whether you're looking for luxury leather collections,
+                            custom orders, or partnership opportunities,
+                            our team is ready to assist you.
+                        </p>
+
+                        <div class="info-card">
+
+                            <div class="info-box">
+
+                                <i class="fas fa-location-dot"></i>
+
+                                <div>
+
+                                    <h5>Head Office</h5>
+
+                                    <span>
+                                        NEXTAG  <br>
+                                        Zamzama Commercial Lane 5, DHA Phase 5, <br>
+                                        Karachi, Pakistan
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="info-box">
+
+                                <i class="fas fa-phone"></i>
+
+                                <div>
+
+                                    <h5>Phone</h5>
+
+                                    <span>+92 321 4567890</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="info-box">
+
+                                <i class="fas fa-envelope"></i>
+
+                                <div>
+
+                                    <h5>Email</h5>
+
+                                    <!-- <span>support@nextag.com</span> -->
+                                                                  <p>
+    
+    <a href="mailto:info@example.com" class="text-decoration-none">
+        info@example.com
+    </a>
+</p>
+    
+
+                                </div>
+
+                            </div>
+                             
+                            <div class="info-box">
+
+                                <i class="fas fa-clock"></i>
+
+                                <div>
+
+                                    <h5>Working Hours</h5>
+
+                                    <span>Mon - Sat : 10AM - 8PM</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="col-lg-7">
+
+                    <div class="contact-card">
+
+                        <div class="form-header">
+
+                            <span>CONTACT FORM</span>
+
+                            <h3>Send Us A Message</h3>
+
+                        </div>
+
+                        <form class="contact-form">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+
+                                    <input type="text" placeholder="Your Name" required>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <input type="email" placeholder="Your Email" required>
+
+                                </div>
+
+                            </div>
+
+                            <input type="text" placeholder="Subject" required>
+
+                            <textarea placeholder="Write your message"></textarea>
+
+                            <button type="submit">
+
+                                Send Message
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="map-section" id="store-map">
+        <div class="container">
+            <div class="map-heading ">
+
+                <span class="badge " style="margin-bottom: 1em; background-color: #9c6239;">VISIT OUR STORE</span>
+
+                <h2>Find NEXTAG Store</h2>
+
+                <p>
+                    Experience premium leather craftsmanship at our Karachi studio.
+                </p>
+
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=NEXTAG%20Leather%20Atelier%20Zamzama%20Commercial%20Lane%205%20DHA%20Phase%205%20Karachi%20Pakistan&output=embed"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+
+   <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NexTag</h2>
+        </div>
+        <div class="footer-column">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Compare</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Collections -->
+        <div class="footer-column">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="#">Women's Bag</a></li>
+            <li><a href="#">Men's Wallet</a></li>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Reviews</a></li>
+
+          </ul>
+        </div>
+
+        <!-- About
+      <div class="footer-column">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#">Production</a></li>
+        </ul>
+      </div> -->
+
+        <!-- Support -->
+        <!-- <div class="footer-column">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Care Guide</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div> -->
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <div class="newsletter-input">
+            <input type="email" placeholder="Enter your email">
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="shop-luxury-section">
+        <i class="fas fa-store" style="font-size: 2.2rem; color: #d5aa71;"></i>
+        <h3 style="margin: 16px 0 8px; font-family: 'Cormorant Garamond', serif;">NEXTAG ATELIER</h3>
+        <p><i class="fas fa-map-pin"></i> Karachi — Pakistan | Walk-in by appointment</p>
+        <p>+92 11 111 111 | nextag.com</p>
+        <p style="margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Premium leather goods
+          crafted with timeless elegance, modern luxury, and exceptional quality.</p>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; NexTag. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Match the Compare page mobile behavior: close the expanded menu after a link click,
+        // outside click, or desktop resize while keeping Bootstrap's hamburger animation.
+        const navToggler = document.querySelector(".navbar-toggler");
+        const navMenu = document.getElementById("navbarSupportedContent");
+
+        if (navToggler && navMenu && window.bootstrap) {
+            const navCollapse = bootstrap.Collapse.getOrCreateInstance(navMenu, {
+                toggle: false
+            });
+
+            const closeMenu = () => {
+                if (navMenu.classList.contains("show")) {
+                    navCollapse.hide();
+                }
+            };
+
+            navMenu.querySelectorAll(".nav-link:not(.dropdown-toggle), .dropdown-item").forEach((link) => {
+                link.addEventListener("click", closeMenu);
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!navMenu.classList.contains("show")) {
+                    return;
+                }
+
+                const clickedInsideNavbar = event.target.closest(".navbar");
+
+                if (!clickedInsideNavbar) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 992) {
+                    closeMenu();
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
